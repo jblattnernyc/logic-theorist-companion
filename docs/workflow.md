@@ -70,13 +70,14 @@ The companion script `scripts/analyze_run.py` analyzes a single run directory:
 python3 scripts/analyze_run.py runs/YYYYMMDD_HHMMSS
 ```
 
-It writes derived analysis outputs under `reports/` and `manifests/`:
+It writes derived analysis outputs under a per-run directory in `reports/`:
 
 ```text
-reports/YYYYMMDD_HHMMSS_run_report.md
-reports/YYYYMMDD_HHMMSS_theorem_summary.csv
-reports/YYYYMMDD_HHMMSS_analysis_summary.json
-manifests/YYYYMMDD_HHMMSS_analysis_manifest.sha256
+reports/YYYYMMDD_HHMMSS/
+  run_report.md
+  theorem_summary.csv
+  analysis_summary.json
+  analysis_manifest.sha256
 ```
 
 The report and structured summaries are derivative companion records. They do not replace the raw run bundle, stdout, stderr, generated artifacts, or run manifest.

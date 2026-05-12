@@ -1,6 +1,6 @@
 {
   "analysis_script": "scripts/analyze_run.py",
-  "analysis_script_sha256": "994341c5c5687a458312624f2a054fb96a20fd482804bf7503ff18236645c43b",
+  "analysis_script_sha256": "6f58a337f31e0feb457851356811508d3bac63dd33852d24347aabb40d779cd3",
   "command_outputs": {
     "date": "Tue May 12 01:09:19 EDT 2026",
     "git branch --show-current": "master",
@@ -159,7 +159,7 @@
       "text": "; compilation unit finished"
     }
   ],
-  "created_at": "2026-05-12T16:40:02+00:00",
+  "created_at": "2026-05-12T17:15:35+00:00",
   "exit_status": "0",
   "logic_theorist_log_finding_counts": {
     "ambiguous PQ warning": 6,
@@ -310,10 +310,10 @@
     }
   ],
   "outputs": {
-    "csv": "reports/20260512_010918_theorem_summary.csv",
-    "json": "reports/20260512_010918_analysis_summary.json",
-    "manifest": "manifests/20260512_010918_analysis_manifest.sha256",
-    "report": "reports/20260512_010918_run_report.md"
+    "csv": "reports/20260512_010918/theorem_summary.csv",
+    "json": "reports/20260512_010918/analysis_summary.json",
+    "manifest": "reports/20260512_010918/analysis_manifest.sha256",
+    "report": "reports/20260512_010918/run_report.md"
   },
   "post_run_metadata": {
     "End date": "Tue May 12 01:09:24 EDT 2026",

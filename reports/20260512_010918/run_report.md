@@ -1,6 +1,6 @@
 # Logic Theorist Run Report: 20260512_010918
 
-Generated: `2026-05-12T16:40:02+00:00`
+Generated: `2026-05-12T17:15:35+00:00`
 
 This report describes preserved local executable behavior from a companion run bundle. It is not a historical claim about the original Logic Theorist, the published literature, or any upstream repository.
 
@@ -143,10 +143,10 @@ Representative findings, limited to the first 40 lines found:
 
 ## Analysis Outputs
 
-- Markdown report: `reports/20260512_010918_run_report.md`
-- Theorem CSV: `reports/20260512_010918_theorem_summary.csv`
-- JSON summary: `reports/20260512_010918_analysis_summary.json`
-- Analysis manifest: `manifests/20260512_010918_analysis_manifest.sha256`
+- Markdown report: `reports/20260512_010918/run_report.md`
+- Theorem CSV: `reports/20260512_010918/theorem_summary.csv`
+- JSON summary: `reports/20260512_010918/analysis_summary.json`
+- Analysis manifest: `reports/20260512_010918/analysis_manifest.sha256`
 
 ## Methodological Notes
 

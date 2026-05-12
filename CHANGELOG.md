@@ -14,10 +14,11 @@ This changelog records changes to the companion research apparatus. It does not 
 - Added a standing policy to return the IPL-V specimen to a clean working tree after companion evidence is committed, pushed, and manifest-verified, using only exact native generated file cleanup.
 - Added `scripts/analyze_run.py` to parse preserved run bundles and generate formal Markdown, CSV, JSON, and SHA-256 analysis outputs.
 - Added first derived analysis outputs for `runs/20260512_010918/`:
-  - `reports/20260512_010918_run_report.md`
-  - `reports/20260512_010918_theorem_summary.csv`
-  - `reports/20260512_010918_analysis_summary.json`
-  - `manifests/20260512_010918_analysis_manifest.sha256`
+  - `reports/20260512_010918/run_report.md`
+  - `reports/20260512_010918/theorem_summary.csv`
+  - `reports/20260512_010918/analysis_summary.json`
+  - `reports/20260512_010918/analysis_manifest.sha256`
+- Added a per-run analysis-output directory policy for `reports/YYYYMMDD_HHMMSS/`.
 
 ### Fixed
 

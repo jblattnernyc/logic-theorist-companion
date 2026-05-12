@@ -637,11 +637,12 @@ def write_analysis_manifest(manifest_path: Path, files: Iterable[Path], base: Pa
 
 
 def output_paths(root: Path, run_id: str) -> dict[str, Path]:
+    run_report_dir = root / "reports" / run_id
     return {
-        "report": root / "reports" / f"{run_id}_run_report.md",
-        "csv": root / "reports" / f"{run_id}_theorem_summary.csv",
-        "json": root / "reports" / f"{run_id}_analysis_summary.json",
-        "manifest": root / "manifests" / f"{run_id}_analysis_manifest.sha256",
+        "report": run_report_dir / "run_report.md",
+        "csv": run_report_dir / "theorem_summary.csv",
+        "json": run_report_dir / "analysis_summary.json",
+        "manifest": run_report_dir / "analysis_manifest.sha256",
     }
 
 

@@ -50,10 +50,11 @@ python3 scripts/analyze_run.py runs/YYYYMMDD_HHMMSS
 The analysis script reads an existing run bundle and writes derived companion records:
 
 ```text
-reports/YYYYMMDD_HHMMSS_run_report.md
-reports/YYYYMMDD_HHMMSS_theorem_summary.csv
-reports/YYYYMMDD_HHMMSS_analysis_summary.json
-manifests/YYYYMMDD_HHMMSS_analysis_manifest.sha256
+reports/YYYYMMDD_HHMMSS/
+  run_report.md
+  theorem_summary.csv
+  analysis_summary.json
+  analysis_manifest.sha256
 ```
 
 These reports and structured summaries are derived analysis records. They do not replace the raw run directory, stdout, stderr, generated artifacts, or run manifest.

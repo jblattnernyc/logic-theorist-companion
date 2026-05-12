@@ -46,10 +46,10 @@ python3 scripts/analyze_run.py runs/20260512_010918
 
 The script reads the existing run directory and writes:
 
-- `reports/YYYYMMDD_HHMMSS_run_report.md`
-- `reports/YYYYMMDD_HHMMSS_theorem_summary.csv`
-- `reports/YYYYMMDD_HHMMSS_analysis_summary.json`
-- `manifests/YYYYMMDD_HHMMSS_analysis_manifest.sha256`
+- `reports/YYYYMMDD_HHMMSS/run_report.md`
+- `reports/YYYYMMDD_HHMMSS/theorem_summary.csv`
+- `reports/YYYYMMDD_HHMMSS/analysis_summary.json`
+- `reports/YYYYMMDD_HHMMSS/analysis_manifest.sha256`
 
 By default, the script refuses to overwrite existing analysis outputs. Use `--force` only when intentionally regenerating those derived analysis files:
 
