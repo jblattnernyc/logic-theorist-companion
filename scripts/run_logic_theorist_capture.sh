@@ -80,18 +80,39 @@ copy_newer_tree_files() {
 copy_newer_file_glob() {
   local destination_dir=$1
   local marker_file=$2
+  local marker_mtime
   shift 2
 
   mkdir -p "$destination_dir"
+  marker_mtime=$(file_mtime_epoch "$marker_file")
 
   local source_file
+  local source_mtime
   for source_file in "$@"; do
     [[ -e "$source_file" ]] || continue
     [[ -f "$source_file" ]] || continue
-    if [[ "$source_file" -nt "$marker_file" ]]; then
+    source_mtime=$(file_mtime_epoch "$source_file")
+    if (( source_mtime >= marker_mtime )); then
       cp -p "$source_file" "$destination_dir/"
     fi
   done
+}
+
+file_mtime_epoch() {
+  local path=$1
+  local value
+
+  if value=$(stat -f %m "$path" 2>/dev/null) && [[ "$value" =~ ^[0-9]+$ ]]; then
+    printf '%s\n' "$value"
+    return 0
+  fi
+
+  if value=$(stat -c %Y "$path" 2>/dev/null) && [[ "$value" =~ ^[0-9]+$ ]]; then
+    printf '%s\n' "$value"
+    return 0
+  fi
+
+  die "could not determine modification time for: $path"
 }
 
 write_manifest() {

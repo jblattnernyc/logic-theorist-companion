@@ -19,10 +19,17 @@ This changelog records changes to the companion research apparatus. It does not 
   - `reports/20260512_010918/analysis_summary.json`
   - `reports/20260512_010918/analysis_manifest.sha256`
 - Added a per-run analysis-output directory policy for `reports/YYYYMMDD_HHMMSS/`.
+- Added the second captured Logic Theorist confirmation run bundle under `runs/20260512_141829/`, including a recovery note documenting completion of the copied FASL artifact set after a timestamp-boundary capture omission.
+- Added derived analysis outputs for `runs/20260512_141829/`:
+  - `reports/20260512_141829/run_report.md`
+  - `reports/20260512_141829/theorem_summary.csv`
+  - `reports/20260512_141829/analysis_summary.json`
+  - `reports/20260512_141829/analysis_manifest.sha256`
 
 ### Fixed
 
 - Corrected `scripts/run_logic_theorist_capture.sh` summary generation so Bash `printf` does not treat Markdown bullet lines beginning with `-` as options.
+- Corrected `scripts/run_logic_theorist_capture.sh` root-artifact timestamp handling so same-second generated root artifacts, such as `lt.fasl`, are preserved when their filesystem timestamp matches the run marker timestamp.
 
 - Initialized the local `logic-theorist-companion` repository as a separate Git repository under the `LOGIC THEORIST` umbrella workspace.
 - Added companion repository documentation describing the two-repository model, provenance expectations, and separation between executable source and scholarly/reproducibility apparatus.

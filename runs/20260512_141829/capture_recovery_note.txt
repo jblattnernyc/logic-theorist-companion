@@ -1,0 +1,16 @@
+The Logic Theorist execution for run 20260512_141829 completed with exit status 0.
+
+During post-run review, the IPL-V specimen contained both native root-level FASL artifacts:
+
+- iplv.fasl
+- lt.fasl
+
+The initial copied artifact bundle contained iplv.fasl but not lt.fasl. The stdout transcript records that SBCL wrote lt.fasl, and the post-run IPL-V Git status records lt.fasl as an untracked native generated file.
+
+The omission was traced to a timestamp edge case in the capture script: lt.fasl and the run marker had the same one-second filesystem timestamp, so the strict "newer than marker" check did not select lt.fasl.
+
+Before any cleanup of native IPL-V generated files, lt.fasl was copied from the IPL-V specimen into:
+
+generated_artifacts/iplv-root/lt.fasl
+
+The generated artifact listing, run summary, and SHA-256 manifest were updated after this copy. Logic Theorist was not rerun during this recovery step.

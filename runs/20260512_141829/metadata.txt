@@ -1,0 +1,104 @@
+# Logic Theorist Run Metadata
+
+Run ID: 20260512_141829
+Companion repository: /Users/john-blattner/Documents/PROGRAMMING/IPL/LOGIC THEORIST/logic-theorist-companion
+IPL-V specimen: /Users/john-blattner/Documents/PROGRAMMING/IPL/LOGIC THEORIST/IPL-V
+Run directory: /Users/john-blattner/Documents/PROGRAMMING/IPL/LOGIC THEORIST/logic-theorist-companion/runs/20260512_141829
+Start date: Tue May 12 14:18:29 EDT 2026
+Command: sbcl --dynamic-space-size 4096 --eval \(load\ \(compile-file\ \"lt.lisp\"\)\) --eval \(sb-ext:exit\)
+
+## pwd
+
+Working directory: /Users/john-blattner/Documents/PROGRAMMING/IPL/LOGIC THEORIST/IPL-V
+
+Command: pwd
+
+/Users/john-blattner/Documents/PROGRAMMING/IPL/LOGIC THEORIST/IPL-V
+
+## git rev-parse HEAD
+
+Working directory: /Users/john-blattner/Documents/PROGRAMMING/IPL/LOGIC THEORIST/IPL-V
+
+Command: git rev-parse HEAD
+
+e35a705d57e99fe91d76d76b224b8af30f2fd632
+
+## git branch --show-current
+
+Working directory: /Users/john-blattner/Documents/PROGRAMMING/IPL/LOGIC THEORIST/IPL-V
+
+Command: git branch --show-current
+
+master
+
+## git remote -v
+
+Working directory: /Users/john-blattner/Documents/PROGRAMMING/IPL/LOGIC THEORIST/IPL-V
+
+Command: git remote -v
+
+origin	https://github.com/jblattnernyc/IPL-V.git (fetch)
+origin	https://github.com/jblattnernyc/IPL-V.git (push)
+upstream	https://github.com/jeffshrager/IPL-V.git (fetch)
+upstream	DISABLED (push)
+
+## git status --short
+
+Working directory: /Users/john-blattner/Documents/PROGRAMMING/IPL/LOGIC THEORIST/IPL-V
+
+Command: git status --short
+
+
+## git diff --stat
+
+Working directory: /Users/john-blattner/Documents/PROGRAMMING/IPL/LOGIC THEORIST/IPL-V
+
+Command: git diff --stat
+
+
+## git log -1 --oneline
+
+Working directory: /Users/john-blattner/Documents/PROGRAMMING/IPL/LOGIC THEORIST/IPL-V
+
+Command: git log -1 --oneline
+
+e35a705 no message
+
+## sbcl --version
+
+Working directory: /Users/john-blattner/Documents/PROGRAMMING/IPL/LOGIC THEORIST/IPL-V
+
+Command: sbcl --version
+
+SBCL 2.6.4
+
+## uname -a
+
+Working directory: /Users/john-blattner/Documents/PROGRAMMING/IPL/LOGIC THEORIST/IPL-V
+
+Command: uname -a
+
+Darwin Johns-Mac-mini.local 25.4.0 Darwin Kernel Version 25.4.0: Thu Mar 19 19:31:09 PDT 2026; root:xnu-12377.101.15~1/RELEASE_ARM64_T8132 arm64
+
+## date
+
+Working directory: /Users/john-blattner/Documents/PROGRAMMING/IPL/LOGIC THEORIST/IPL-V
+
+Command: date
+
+Tue May 12 14:18:29 EDT 2026
+
+## companion git rev-parse HEAD
+
+Working directory: /Users/john-blattner/Documents/PROGRAMMING/IPL/LOGIC THEORIST/logic-theorist-companion
+
+Command: git rev-parse HEAD
+
+0f4481ad6754aebfe0bd0d7e1ebd7cb440d8b227
+
+## companion git status --short --untracked-files=no
+
+Working directory: /Users/john-blattner/Documents/PROGRAMMING/IPL/LOGIC THEORIST/logic-theorist-companion
+
+Command: git status --short --untracked-files=no
+

@@ -1,0 +1,30 @@
+# Post-Run Metadata
+
+End date: Tue May 12 14:18:34 EDT 2026
+Exit status: 0
+
+## post-run git status --short
+
+Working directory: /Users/john-blattner/Documents/PROGRAMMING/IPL/LOGIC THEORIST/IPL-V
+
+Command: git status --short
+
+?? iplv.fasl
+?? lt.fasl
+?? ltresults/202605121418.dotstar
+?? ltresults/202605121418.log
+
+## post-run git diff --stat
+
+Working directory: /Users/john-blattner/Documents/PROGRAMMING/IPL/LOGIC THEORIST/IPL-V
+
+Command: git diff --stat
+
+
+## post-run date
+
+Working directory: /Users/john-blattner/Documents/PROGRAMMING/IPL/LOGIC THEORIST/IPL-V
+
+Command: date
+
+Tue May 12 14:18:34 EDT 2026
