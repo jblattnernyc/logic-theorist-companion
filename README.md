@@ -79,6 +79,10 @@ reports/comparisons/RUN_ID__RUN_ID/
 
 Comparison outputs are derived reproducibility records. They should report agreement or differences among preserved local runs without making broad historical claims.
 
+## User Guide
+
+See [docs/user_guide.md](docs/user_guide.md) for the full operator-facing guide to repository roles, run capture, analysis, comparison, manifest verification, native artifact cleanup, and safety rules.
+
 ## Current Repository Status
 
 The public IPL-V fork is:

@@ -31,6 +31,7 @@ This changelog records changes to the companion research apparatus. It does not 
   - `reports/comparisons/20260512_010918__20260512_141829/comparison_summary.csv`
   - `reports/comparisons/20260512_010918__20260512_141829/comparison_summary.json`
   - `reports/comparisons/20260512_010918__20260512_141829/comparison_manifest.sha256`
+- Added `docs/user_guide.md` as a professional operator-facing guide to repository roles, run capture, analysis, comparison, manifest verification, cleanup, and safety rules.
 
 ### Fixed
 
