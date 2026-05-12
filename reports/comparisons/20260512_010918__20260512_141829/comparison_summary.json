@@ -1,0 +1,580 @@
+{
+  "all_analysis_manifests_ok": true,
+  "all_raw_manifests_ok": true,
+  "all_selected_metadata_match": true,
+  "all_theorem_rows_match": true,
+  "analysis_manifest_checks": {
+    "20260512_010918": {
+      "entry_count": 3,
+      "exists": true,
+      "malformed": [],
+      "mismatched": [],
+      "missing": [],
+      "path": "reports/20260512_010918/analysis_manifest.sha256",
+      "status": "OK"
+    },
+    "20260512_141829": {
+      "entry_count": 3,
+      "exists": true,
+      "malformed": [],
+      "mismatched": [],
+      "missing": [],
+      "path": "reports/20260512_141829/analysis_manifest.sha256",
+      "status": "OK"
+    }
+  },
+  "comparison_id": "20260512_010918__20260512_141829",
+  "comparison_script": "scripts/compare_runs.py",
+  "comparison_script_sha256": "86b86cf73ebf411f20d34c68740dd895482859276cdc80b7b5cef2801589c9fd",
+  "created_at": "2026-05-12T18:44:30+00:00",
+  "differing_theorem_rows": 0,
+  "matching_theorem_rows": 23,
+  "metadata_comparison": {
+    "compiler_stderr_finding_counts": {
+      "all_match": true,
+      "values": {
+        "20260512_010918": {
+          "compiler note": 1,
+          "compiler style warning": 3,
+          "compiler summary": 2,
+          "compiler warning": 17
+        },
+        "20260512_141829": {
+          "compiler note": 1,
+          "compiler style warning": 3,
+          "compiler summary": 2,
+          "compiler warning": 17
+        }
+      }
+    },
+    "iplv_branch": {
+      "all_match": true,
+      "values": {
+        "20260512_010918": "master",
+        "20260512_141829": "master"
+      }
+    },
+    "iplv_commit": {
+      "all_match": true,
+      "values": {
+        "20260512_010918": "e35a705d57e99fe91d76d76b224b8af30f2fd632",
+        "20260512_141829": "e35a705d57e99fe91d76d76b224b8af30f2fd632"
+      }
+    },
+    "iplv_latest_commit_line": {
+      "all_match": true,
+      "values": {
+        "20260512_010918": "e35a705 no message",
+        "20260512_141829": "e35a705 no message"
+      }
+    },
+    "logic_theorist_log_finding_counts": {
+      "all_match": true,
+      "values": {
+        "20260512_010918": {
+          "ambiguous PQ warning": 6,
+          "bad expression": 2,
+          "missing local symbol warning": 3
+        },
+        "20260512_141829": {
+          "ambiguous PQ warning": 6,
+          "bad expression": 2,
+          "missing local symbol warning": 3
+        }
+      }
+    },
+    "sbcl_version": {
+      "all_match": true,
+      "values": {
+        "20260512_010918": "SBCL 2.6.4",
+        "20260512_141829": "SBCL 2.6.4"
+      }
+    },
+    "status_counts": {
+      "all_match": true,
+      "values": {
+        "20260512_010918": {
+          "NO PROOF FOUND": 6,
+          "PROOF FOUND": 17
+        },
+        "20260512_141829": {
+          "NO PROOF FOUND": 6,
+          "PROOF FOUND": 17
+        }
+      }
+    },
+    "system": {
+      "all_match": true,
+      "values": {
+        "20260512_010918": "Darwin Johns-Mac-mini.local 25.4.0 Darwin Kernel Version 25.4.0: Thu Mar 19 19:31:09 PDT 2026; root:xnu-12377.101.15~1/RELEASE_ARM64_T8132 arm64",
+        "20260512_141829": "Darwin Johns-Mac-mini.local 25.4.0 Darwin Kernel Version 25.4.0: Thu Mar 19 19:31:09 PDT 2026; root:xnu-12377.101.15~1/RELEASE_ARM64_T8132 arm64"
+      }
+    },
+    "theorem_attempt_count": {
+      "all_match": true,
+      "values": {
+        "20260512_010918": 23,
+        "20260512_141829": 23
+      }
+    }
+  },
+  "methodological_note": "This comparison describes derived local run-analysis records only and does not assert historical conclusions about the original Logic Theorist.",
+  "notable_theorems": [
+    {
+      "all_fields_match": true,
+      "differences": [],
+      "effort_actual_values": {
+        "20260512_010918": "5482",
+        "20260512_141829": "5482"
+      },
+      "expression": "-PI(PIQ)",
+      "notable": "True",
+      "status_values": {
+        "20260512_010918": "PROOF FOUND",
+        "20260512_141829": "PROOF FOUND"
+      },
+      "theorem": "2.21"
+    },
+    {
+      "all_fields_match": true,
+      "differences": [],
+      "effort_actual_values": {
+        "20260512_010918": "207183",
+        "20260512_141829": "207183"
+      },
+      "expression": "PI(-PVQ)",
+      "notable": "True",
+      "status_values": {
+        "20260512_010918": "NO PROOF FOUND",
+        "20260512_141829": "NO PROOF FOUND"
+      },
+      "theorem": "2.24"
+    },
+    {
+      "all_fields_match": true,
+      "differences": [],
+      "effort_actual_values": {
+        "20260512_010918": "8122",
+        "20260512_141829": "8122"
+      },
+      "expression": "P=--P",
+      "notable": "True",
+      "status_values": {
+        "20260512_010918": "PROOF FOUND",
+        "20260512_141829": "PROOF FOUND"
+      },
+      "theorem": "4.13"
+    },
+    {
+      "all_fields_match": true,
+      "differences": [],
+      "effort_actual_values": {
+        "20260512_010918": "43016",
+        "20260512_141829": "43016"
+      },
+      "expression": "P=(P*P)",
+      "notable": "True",
+      "status_values": {
+        "20260512_010918": "PROOF FOUND",
+        "20260512_141829": "PROOF FOUND"
+      },
+      "theorem": "4.24"
+    },
+    {
+      "all_fields_match": true,
+      "differences": [],
+      "effort_actual_values": {
+        "20260512_010918": "12277",
+        "20260512_141829": "12277"
+      },
+      "expression": "P=(PVP)",
+      "notable": "True",
+      "status_values": {
+        "20260512_010918": "PROOF FOUND",
+        "20260512_141829": "PROOF FOUND"
+      },
+      "theorem": "4.25"
+    }
+  ],
+  "outputs": {
+    "csv": "reports/comparisons/20260512_010918__20260512_141829/comparison_summary.csv",
+    "json": "reports/comparisons/20260512_010918__20260512_141829/comparison_summary.json",
+    "manifest": "reports/comparisons/20260512_010918__20260512_141829/comparison_manifest.sha256",
+    "report": "reports/comparisons/20260512_010918__20260512_141829/comparison_report.md"
+  },
+  "raw_manifest_checks": {
+    "20260512_010918": {
+      "entry_count": 36,
+      "exists": true,
+      "malformed": [],
+      "mismatched": [],
+      "missing": [],
+      "path": "runs/20260512_010918/manifest.sha256",
+      "status": "OK"
+    },
+    "20260512_141829": {
+      "entry_count": 36,
+      "exists": true,
+      "malformed": [],
+      "mismatched": [],
+      "missing": [],
+      "path": "runs/20260512_141829/manifest.sha256",
+      "status": "OK"
+    }
+  },
+  "run_ids": [
+    "20260512_010918",
+    "20260512_141829"
+  ],
+  "theorem_comparison": [
+    {
+      "all_fields_match": true,
+      "differences": [],
+      "effort_actual_values": {
+        "20260512_010918": "5579",
+        "20260512_141829": "5579"
+      },
+      "expression": "(PI-P)I-P",
+      "notable": "False",
+      "status_values": {
+        "20260512_010918": "PROOF FOUND",
+        "20260512_141829": "PROOF FOUND"
+      },
+      "theorem": "2.01"
+    },
+    {
+      "all_fields_match": true,
+      "differences": [],
+      "effort_actual_values": {
+        "20260512_010918": "4253",
+        "20260512_141829": "4253"
+      },
+      "expression": "QI(PIQ)",
+      "notable": "False",
+      "status_values": {
+        "20260512_010918": "PROOF FOUND",
+        "20260512_141829": "PROOF FOUND"
+      },
+      "theorem": "2.02"
+    },
+    {
+      "all_fields_match": true,
+      "differences": [],
+      "effort_actual_values": {
+        "20260512_010918": "22175",
+        "20260512_141829": "22175"
+      },
+      "expression": "(PI(QIR))I(QI(PIR))",
+      "notable": "False",
+      "status_values": {
+        "20260512_010918": "PROOF FOUND",
+        "20260512_141829": "PROOF FOUND"
+      },
+      "theorem": "2.04"
+    },
+    {
+      "all_fields_match": true,
+      "differences": [],
+      "effort_actual_values": {
+        "20260512_010918": "9280",
+        "20260512_141829": "9280"
+      },
+      "expression": "(QIR)I((PIQ)I(PIR))",
+      "notable": "False",
+      "status_values": {
+        "20260512_010918": "PROOF FOUND",
+        "20260512_141829": "PROOF FOUND"
+      },
+      "theorem": "2.05"
+    },
+    {
+      "all_fields_match": true,
+      "differences": [],
+      "effort_actual_values": {
+        "20260512_010918": "31762",
+        "20260512_141829": "31762"
+      },
+      "expression": "(PIQ)I((QIR)I(PIR))",
+      "notable": "False",
+      "status_values": {
+        "20260512_010918": "PROOF FOUND",
+        "20260512_141829": "PROOF FOUND"
+      },
+      "theorem": "2.06"
+    },
+    {
+      "all_fields_match": true,
+      "differences": [],
+      "effort_actual_values": {
+        "20260512_010918": "1765",
+        "20260512_141829": "1765"
+      },
+      "expression": "PI(PVP)",
+      "notable": "False",
+      "status_values": {
+        "20260512_010918": "PROOF FOUND",
+        "20260512_141829": "PROOF FOUND"
+      },
+      "theorem": "2.07"
+    },
+    {
+      "all_fields_match": true,
+      "differences": [],
+      "effort_actual_values": {
+        "20260512_010918": "5853",
+        "20260512_141829": "5853"
+      },
+      "expression": "PIP",
+      "notable": "False",
+      "status_values": {
+        "20260512_010918": "PROOF FOUND",
+        "20260512_141829": "PROOF FOUND"
+      },
+      "theorem": "2.08"
+    },
+    {
+      "all_fields_match": true,
+      "differences": [],
+      "effort_actual_values": {
+        "20260512_010918": "3680",
+        "20260512_141829": "3680"
+      },
+      "expression": "-PVP",
+      "notable": "False",
+      "status_values": {
+        "20260512_010918": "PROOF FOUND",
+        "20260512_141829": "PROOF FOUND"
+      },
+      "theorem": "2.10"
+    },
+    {
+      "all_fields_match": true,
+      "differences": [],
+      "effort_actual_values": {
+        "20260512_010918": "4377",
+        "20260512_141829": "4377"
+      },
+      "expression": "PV-P",
+      "notable": "False",
+      "status_values": {
+        "20260512_010918": "PROOF FOUND",
+        "20260512_141829": "PROOF FOUND"
+      },
+      "theorem": "2.11"
+    },
+    {
+      "all_fields_match": true,
+      "differences": [],
+      "effort_actual_values": {
+        "20260512_010918": "5594",
+        "20260512_141829": "5594"
+      },
+      "expression": "PI--P",
+      "notable": "False",
+      "status_values": {
+        "20260512_010918": "PROOF FOUND",
+        "20260512_141829": "PROOF FOUND"
+      },
+      "theorem": "2.12"
+    },
+    {
+      "all_fields_match": true,
+      "differences": [],
+      "effort_actual_values": {
+        "20260512_010918": "11592",
+        "20260512_141829": "11592"
+      },
+      "expression": "PV---P",
+      "notable": "False",
+      "status_values": {
+        "20260512_010918": "PROOF FOUND",
+        "20260512_141829": "PROOF FOUND"
+      },
+      "theorem": "2.13"
+    },
+    {
+      "all_fields_match": true,
+      "differences": [],
+      "effort_actual_values": {
+        "20260512_010918": "233510",
+        "20260512_141829": "233510"
+      },
+      "expression": "--PIP",
+      "notable": "False",
+      "status_values": {
+        "20260512_010918": "NO PROOF FOUND",
+        "20260512_141829": "NO PROOF FOUND"
+      },
+      "theorem": "2.14"
+    },
+    {
+      "all_fields_match": true,
+      "differences": [],
+      "effort_actual_values": {
+        "20260512_010918": "214612",
+        "20260512_141829": "214612"
+      },
+      "expression": "(-PIQ)I(-QIP)",
+      "notable": "False",
+      "status_values": {
+        "20260512_010918": "NO PROOF FOUND",
+        "20260512_141829": "NO PROOF FOUND"
+      },
+      "theorem": "2.15"
+    },
+    {
+      "all_fields_match": true,
+      "differences": [],
+      "effort_actual_values": {
+        "20260512_010918": "23515",
+        "20260512_141829": "23515"
+      },
+      "expression": "PI(PVQ)",
+      "notable": "False",
+      "status_values": {
+        "20260512_010918": "PROOF FOUND",
+        "20260512_141829": "PROOF FOUND"
+      },
+      "theorem": "2.20"
+    },
+    {
+      "all_fields_match": true,
+      "differences": [],
+      "effort_actual_values": {
+        "20260512_010918": "5482",
+        "20260512_141829": "5482"
+      },
+      "expression": "-PI(PIQ)",
+      "notable": "True",
+      "status_values": {
+        "20260512_010918": "PROOF FOUND",
+        "20260512_141829": "PROOF FOUND"
+      },
+      "theorem": "2.21"
+    },
+    {
+      "all_fields_match": true,
+      "differences": [],
+      "effort_actual_values": {
+        "20260512_010918": "207183",
+        "20260512_141829": "207183"
+      },
+      "expression": "PI(-PVQ)",
+      "notable": "True",
+      "status_values": {
+        "20260512_010918": "NO PROOF FOUND",
+        "20260512_141829": "NO PROOF FOUND"
+      },
+      "theorem": "2.24"
+    },
+    {
+      "all_fields_match": true,
+      "differences": [],
+      "effort_actual_values": {
+        "20260512_010918": "239018",
+        "20260512_141829": "239018"
+      },
+      "expression": "(-(P*Q))I(-PV-Q)",
+      "notable": "False",
+      "status_values": {
+        "20260512_010918": "NO PROOF FOUND",
+        "20260512_141829": "NO PROOF FOUND"
+      },
+      "theorem": "3.13"
+    },
+    {
+      "all_fields_match": true,
+      "differences": [],
+      "effort_actual_values": {
+        "20260512_010918": "200411",
+        "20260512_141829": "200411"
+      },
+      "expression": "(-PV-Q)I(-(P*Q))",
+      "notable": "False",
+      "status_values": {
+        "20260512_010918": "NO PROOF FOUND",
+        "20260512_141829": "NO PROOF FOUND"
+      },
+      "theorem": "3.14"
+    },
+    {
+      "all_fields_match": true,
+      "differences": [],
+      "effort_actual_values": {
+        "20260512_010918": "213818",
+        "20260512_141829": "213818"
+      },
+      "expression": "-(P*-P)",
+      "notable": "False",
+      "status_values": {
+        "20260512_010918": "NO PROOF FOUND",
+        "20260512_141829": "NO PROOF FOUND"
+      },
+      "theorem": "3.24"
+    },
+    {
+      "all_fields_match": true,
+      "differences": [],
+      "effort_actual_values": {
+        "20260512_010918": "8122",
+        "20260512_141829": "8122"
+      },
+      "expression": "P=--P",
+      "notable": "True",
+      "status_values": {
+        "20260512_010918": "PROOF FOUND",
+        "20260512_141829": "PROOF FOUND"
+      },
+      "theorem": "4.13"
+    },
+    {
+      "all_fields_match": true,
+      "differences": [],
+      "effort_actual_values": {
+        "20260512_010918": "7834",
+        "20260512_141829": "7834"
+      },
+      "expression": "P=P",
+      "notable": "False",
+      "status_values": {
+        "20260512_010918": "PROOF FOUND",
+        "20260512_141829": "PROOF FOUND"
+      },
+      "theorem": "4.20"
+    },
+    {
+      "all_fields_match": true,
+      "differences": [],
+      "effort_actual_values": {
+        "20260512_010918": "43016",
+        "20260512_141829": "43016"
+      },
+      "expression": "P=(P*P)",
+      "notable": "True",
+      "status_values": {
+        "20260512_010918": "PROOF FOUND",
+        "20260512_141829": "PROOF FOUND"
+      },
+      "theorem": "4.24"
+    },
+    {
+      "all_fields_match": true,
+      "differences": [],
+      "effort_actual_values": {
+        "20260512_010918": "12277",
+        "20260512_141829": "12277"
+      },
+      "expression": "P=(PVP)",
+      "notable": "True",
+      "status_values": {
+        "20260512_010918": "PROOF FOUND",
+        "20260512_141829": "PROOF FOUND"
+      },
+      "theorem": "4.25"
+    }
+  ],
+  "theorem_count": 23,
+  "theorem_row_match_counts": {
+    "theorem rows matching": 23
+  }
+}

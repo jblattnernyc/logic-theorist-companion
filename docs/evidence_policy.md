@@ -70,6 +70,22 @@ reports/YYYYMMDD_HHMMSS/
 
 Derived analysis records should identify the run directory they analyze and should preserve cautious language distinguishing local executable behavior from historical interpretation.
 
+## Derived Comparison Records
+
+Cross-run comparison outputs are derived reproducibility records. They should be generated from preserved run analyses and stored under `reports/comparisons/`.
+
+The comparison script writes:
+
+```text
+reports/comparisons/RUN_ID__RUN_ID/
+  comparison_report.md
+  comparison_summary.csv
+  comparison_summary.json
+  comparison_manifest.sha256
+```
+
+Comparison records should cite the compared run IDs, verify raw and analysis manifests, and distinguish reproducible local behavior from broader historical interpretation.
+
 ## Manifests
 
 Use SHA-256 manifests for evidence bundles:

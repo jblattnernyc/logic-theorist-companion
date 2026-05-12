@@ -60,3 +60,31 @@ python3 scripts/analyze_run.py runs/20260512_010918 --force
 The parser treats preserved `generated_artifacts/ltresults/*.log` files as the primary source for theorem-attempt parsing. It records theorem attempts, proof and no-proof outcomes, effort counts, subproblem counts, substitution counts, notable theorem statuses, warning lines, compiler-warning summaries, and associated `.dot` artifacts.
 
 The script does not run Logic Theorist, modify the IPL-V executable specimen, contact GitHub, open issues, create pull requests, or delete evidence.
+
+## Run Comparison
+
+`compare_runs.py` compares two or more existing run-analysis directories.
+
+Example:
+
+```sh
+python3 scripts/compare_runs.py 20260512_010918 20260512_141829
+```
+
+The script reads:
+
+- `reports/RUN_ID/theorem_summary.csv`
+- `reports/RUN_ID/analysis_summary.json`
+- `reports/RUN_ID/analysis_manifest.sha256`
+- `runs/RUN_ID/manifest.sha256`
+
+It writes:
+
+- `reports/comparisons/RUN_ID__RUN_ID/comparison_report.md`
+- `reports/comparisons/RUN_ID__RUN_ID/comparison_summary.csv`
+- `reports/comparisons/RUN_ID__RUN_ID/comparison_summary.json`
+- `reports/comparisons/RUN_ID__RUN_ID/comparison_manifest.sha256`
+
+The comparison checks theorem identifiers, expressions, proof/no-proof status, effort counts, subproblem counts, substitution counts, remembered-theorem fields, notable-theorem flags, selected environment metadata, raw run manifests, and analysis manifests.
+
+The script does not run Logic Theorist, modify the IPL-V executable specimen, contact GitHub, open issues, create pull requests, or delete evidence.

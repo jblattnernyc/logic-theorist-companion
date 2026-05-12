@@ -82,6 +82,28 @@ reports/YYYYMMDD_HHMMSS/
 
 The report and structured summaries are derivative companion records. They do not replace the raw run bundle, stdout, stderr, generated artifacts, or run manifest.
 
+## Run Comparison
+
+After two or more run analyses exist, compare the derived records rather than manually inspecting separate reports.
+
+The companion script `scripts/compare_runs.py` compares run IDs:
+
+```sh
+python3 scripts/compare_runs.py YYYYMMDD_HHMMSS YYYYMMDD_HHMMSS
+```
+
+It writes comparison outputs under `reports/comparisons/`:
+
+```text
+reports/comparisons/RUN_ID__RUN_ID/
+  comparison_report.md
+  comparison_summary.csv
+  comparison_summary.json
+  comparison_manifest.sha256
+```
+
+Comparison records should verify the raw run manifests and analysis manifests for every compared run. They should report matching or differing local run behavior without making historical claims beyond the preserved local evidence.
+
 ## Upstream Contact Policy
 
 This project does not publish pull requests, GitHub issues, comments, maintainer-review requests, or other communications to the original IPL-V repository or its maintainers as part of the normal workflow.

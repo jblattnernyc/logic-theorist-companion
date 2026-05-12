@@ -25,6 +25,12 @@ This changelog records changes to the companion research apparatus. It does not 
   - `reports/20260512_141829/theorem_summary.csv`
   - `reports/20260512_141829/analysis_summary.json`
   - `reports/20260512_141829/analysis_manifest.sha256`
+- Added `scripts/compare_runs.py` to compare derived analysis records across preserved Logic Theorist runs.
+- Added the first cross-run comparison for `20260512_010918` and `20260512_141829`:
+  - `reports/comparisons/20260512_010918__20260512_141829/comparison_report.md`
+  - `reports/comparisons/20260512_010918__20260512_141829/comparison_summary.csv`
+  - `reports/comparisons/20260512_010918__20260512_141829/comparison_summary.json`
+  - `reports/comparisons/20260512_010918__20260512_141829/comparison_manifest.sha256`
 
 ### Fixed
 

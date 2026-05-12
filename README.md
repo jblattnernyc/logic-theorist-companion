@@ -59,6 +59,26 @@ reports/YYYYMMDD_HHMMSS/
 
 These reports and structured summaries are derived analysis records. They do not replace the raw run directory, stdout, stderr, generated artifacts, or run manifest.
 
+## Run Comparison
+
+Derived run analyses can be compared with:
+
+```sh
+python3 scripts/compare_runs.py YYYYMMDD_HHMMSS YYYYMMDD_HHMMSS
+```
+
+The comparison script reads existing `reports/RUN_ID/` and `runs/RUN_ID/` records and writes:
+
+```text
+reports/comparisons/RUN_ID__RUN_ID/
+  comparison_report.md
+  comparison_summary.csv
+  comparison_summary.json
+  comparison_manifest.sha256
+```
+
+Comparison outputs are derived reproducibility records. They should report agreement or differences among preserved local runs without making broad historical claims.
+
 ## Current Repository Status
 
 The public IPL-V fork is:
