@@ -10,6 +10,11 @@ This changelog records changes to the companion research apparatus. It does not 
 
 - Added `scripts/run_logic_theorist_capture.sh` to create timestamped Logic Theorist run bundles with metadata, stdout, stderr, exit status, copied generated artifacts, artifact listings, SHA-256 manifests, post-run metadata, and summaries.
 - Added README attribution noting that the companion repository is maintained by John Blattner as part of AI Universe Labs research work.
+- Added the first captured Logic Theorist run bundle under `runs/20260512_010918/`, including a recovery note documenting completion of summary and manifest files after a capture-script summary-generation failure.
+
+### Fixed
+
+- Corrected `scripts/run_logic_theorist_capture.sh` summary generation so Bash `printf` does not treat Markdown bullet lines beginning with `-` as options.
 
 - Initialized the local `logic-theorist-companion` repository as a separate Git repository under the `LOGIC THEORIST` umbrella workspace.
 - Added companion repository documentation describing the two-repository model, provenance expectations, and separation between executable source and scholarly/reproducibility apparatus.

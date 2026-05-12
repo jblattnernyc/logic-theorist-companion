@@ -1,0 +1,7 @@
+Run ID: 20260512_010918
+
+The Logic Theorist execution completed with exit status 0.
+
+The capture script stopped during summary generation because a Bash printf format string began with a hyphen. The run bundle already contained metadata, stdout, stderr, exit status, post-run metadata, generated artifact copies, and a generated artifact listing.
+
+The script was corrected after the run. This recovery note, summary.md, and manifest.sha256 were then completed from the already captured files without rerunning Logic Theorist and without deleting, moving, or cleaning native IPL-V generated artifacts.

@@ -260,11 +260,11 @@ ARTIFACT_COUNT=$(wc -l < "$ARTIFACT_LISTING_FILE" | tr -d ' ')
 
 {
   printf '# Logic Theorist Run Summary\n\n'
-  printf '- Run ID: `%s`\n' "$RUN_ID"
-  printf '- IPL-V path: `%s`\n' "$IPLV_DIR"
-  printf '- Companion run directory: `%s`\n' "$RUN_DIR"
-  printf '- Exit status: `%s`\n' "$RUN_STATUS"
-  printf '- Generated artifact count copied: `%s`\n' "$ARTIFACT_COUNT"
+  printf '%s\n' "- Run ID: \`$RUN_ID\`"
+  printf '%s\n' "- IPL-V path: \`$IPLV_DIR\`"
+  printf '%s\n' "- Companion run directory: \`$RUN_DIR\`"
+  printf '%s\n' "- Exit status: \`$RUN_STATUS\`"
+  printf '%s\n' "- Generated artifact count copied: \`$ARTIFACT_COUNT\`"
   printf '\n'
   printf 'This run summary records local executable behavior only. It is not a historical claim and should be interpreted with the accompanying metadata, stdout, stderr, generated artifacts, and manifest.\n'
 } > "$SUMMARY_FILE"
