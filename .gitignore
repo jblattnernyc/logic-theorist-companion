@@ -1,0 +1,10 @@
+.DS_Store
+__pycache__/
+*.pyc
+.venv/
+.env
+tmp/
+*.log
+!runs/**/*.log
+!evidence/**/*.log
+*.fasl

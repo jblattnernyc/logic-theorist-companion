@@ -1,0 +1,4 @@
+origin	https://github.com/jblattnernyc/IPL-V.git (fetch)
+origin	https://github.com/jblattnernyc/IPL-V.git (push)
+upstream	https://github.com/jeffshrager/IPL-V.git (fetch)
+upstream	DISABLED (push)

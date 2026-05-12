@@ -1,0 +1,17 @@
+# IPL-V Baseline Pending Record
+
+This file records the initial pending state from companion scaffolding.
+
+During initial companion scaffolding, the IPL-V executable specimen was not cloned because the expected project fork was not present under the authenticated GitHub account `jblattnernyc`.
+
+That pending state was later resolved by creating the public `jblattnernyc/IPL-V` fork, cloning it locally, configuring `upstream`, and capturing IPL-V baseline metadata under this directory.
+
+Current baseline records include:
+
+```text
+iplv_baseline_metadata.txt
+iplv_git_head.txt
+iplv_git_remote.txt
+iplv_git_status_short.txt
+environment.txt
+```

@@ -1,0 +1,70 @@
+# IPL-V Baseline Metadata
+
+Captured after creating the public `jblattnernyc/IPL-V` fork, cloning it locally, and configuring the upstream remote.
+
+No Logic Theorist run was performed during this baseline capture.
+
+## Commands and Outputs
+
+### pwd
+
+```text
+/Users/john-blattner/Documents/PROGRAMMING/IPL/LOGIC THEORIST/IPL-V
+```
+
+### git rev-parse HEAD
+
+```text
+e35a705d57e99fe91d76d76b224b8af30f2fd632
+```
+
+### git branch --show-current
+
+```text
+master
+```
+
+### git remote -v
+
+```text
+origin	https://github.com/jblattnernyc/IPL-V.git (fetch)
+origin	https://github.com/jblattnernyc/IPL-V.git (push)
+upstream	https://github.com/jeffshrager/IPL-V.git (fetch)
+upstream	DISABLED (push)
+```
+
+The `upstream` push URL was set to `DISABLED` after baseline clone setup. This preserves upstream fetch access for provenance and comparison while preventing accidental local pushes to the original upstream repository.
+
+### git status --short
+
+```text
+```
+
+### git diff --stat
+
+```text
+```
+
+### git log -1 --oneline
+
+```text
+e35a705 no message
+```
+
+### sbcl --version
+
+```text
+SBCL 2.6.4
+```
+
+### uname -a
+
+```text
+Darwin Johns-Mac-mini.local 25.4.0 Darwin Kernel Version 25.4.0: Thu Mar 19 19:31:09 PDT 2026; root:xnu-12377.101.15~1/RELEASE_ARM64_T8132 arm64
+```
+
+### date
+
+```text
+Mon May 11 21:07:20 EDT 2026
+```
