@@ -58,6 +58,8 @@ Native generated artifacts may remain in `IPL-V/ltresults/` or other IPL-V-gener
 
 The companion script `scripts/run_logic_theorist_capture.sh` implements this capture workflow. It should be used for organized Logic Theorist runs unless a run has a documented reason to use a different capture method.
 
+After the companion run bundle has been committed, pushed, and manifest-verified, return the IPL-V specimen to a clean working tree by removing only the exact native generated files from that run. This keeps the executable specimen clean between runs while preserving the permanent evidence record in the companion repository.
+
 ## Upstream Contact Policy
 
 This project does not publish pull requests, GitHub issues, comments, maintainer-review requests, or other communications to the original IPL-V repository or its maintainers as part of the normal workflow.

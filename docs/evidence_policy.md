@@ -23,6 +23,8 @@ General `.log` files are ignored by default to avoid accidental versioning of in
 
 Every authorized Logic Theorist run should preserve curated run logs and generated artifacts by default. Native files created under `IPL-V/` should remain available in their original generated locations, while organized evidence copies should be stored in a timestamped companion run or evidence directory.
 
+After the companion run bundle has been committed, pushed, and manifest-verified, the local IPL-V specimen should be returned to a clean working tree by removing only the exact native generated files from that run. Do not use broad cleanup commands for this purpose.
+
 ## Companion Evidence
 
 Organized evidence copies, summaries, parser outputs, manifests, and review notes belong in this companion repository or in explicitly documented external evidence storage.
