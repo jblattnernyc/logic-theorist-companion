@@ -19,8 +19,12 @@ runs/YYYYMMDD_HHMMSS/
   stderr.txt
   exit_status.txt
   generated_artifacts/
+  generated_artifacts_listing.txt
+  post_run_metadata.txt
   manifest.sha256
   summary.md
 ```
 
 General `.log` files are ignored elsewhere by default, but curated `.log` files under `runs/` may be versioned as part of an organized run bundle.
+
+Use `scripts/run_logic_theorist_capture.sh` for organized Logic Theorist runs unless a run has a documented reason to use a different capture method.

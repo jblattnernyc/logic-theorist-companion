@@ -48,11 +48,15 @@ runs/YYYYMMDD_HHMMSS/
   stderr.txt
   exit_status.txt
   generated_artifacts/
+  generated_artifacts_listing.txt
+  post_run_metadata.txt
   manifest.sha256
   summary.md
 ```
 
 Native generated artifacts may remain in `IPL-V/ltresults/` or other IPL-V-generated paths. The companion run directory should contain organized evidence copies with sufficient metadata to connect them to the source commit, command, environment, and timestamp.
+
+The companion script `scripts/run_logic_theorist_capture.sh` implements this capture workflow. It should be used for organized Logic Theorist runs unless a run has a documented reason to use a different capture method.
 
 ## Upstream Contact Policy
 

@@ -55,7 +55,7 @@ https://github.com/jblattnernyc/logic-theorist-companion
 
 The local IPL-V specimen has been cloned from the project fork and configured with `upstream` pointing to the original `jeffshrager/IPL-V` repository.
 
-The local companion repository has `origin` configured, but its scaffold has not been committed or pushed. GitHub issues, pull requests, releases, tags, commits, pushes, and Logic Theorist execution require explicit confirmation.
+The local companion repository has `origin` configured, and the initial scaffold has been committed and pushed. Future GitHub issues, pull requests, releases, tags, commits, pushes, and Logic Theorist execution require explicit confirmation.
 
 ## Upstream Contact Policy
 
@@ -64,6 +64,10 @@ This project does not publish pull requests, GitHub issues, comments, maintainer
 ## License
 
 This companion repository is licensed under the MIT License. This license applies to the original documentation, scripts, reports, and workflow materials in this repository. It does not change the licensing or provenance of the upstream IPL-V repository or historical source materials.
+
+## Attribution
+
+This companion repository is maintained by John Blattner as part of AI Universe Labs research work.
 
 ## Changelog
 

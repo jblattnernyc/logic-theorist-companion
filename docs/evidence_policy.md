@@ -44,9 +44,13 @@ runs/YYYYMMDD_HHMMSS/
   stderr.txt
   exit_status.txt
   generated_artifacts/
+  generated_artifacts_listing.txt
+  post_run_metadata.txt
   manifest.sha256
   summary.md
 ```
+
+The companion script `scripts/run_logic_theorist_capture.sh` implements this default run-bundle structure.
 
 ## Manifests
 

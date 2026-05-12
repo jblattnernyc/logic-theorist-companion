@@ -4,7 +4,13 @@ __pycache__/
 .venv/
 .env
 tmp/
+!runs/**/generated_artifacts/tmp/
+!runs/**/generated_artifacts/tmp/**
+!evidence/**/generated_artifacts/tmp/
+!evidence/**/generated_artifacts/tmp/**
 *.log
 !runs/**/*.log
 !evidence/**/*.log
 *.fasl
+!runs/**/*.fasl
+!evidence/**/*.fasl
