@@ -39,6 +39,25 @@ The project distinguishes among:
 
 Future Logic Theorist runs may create native generated files under the executable specimen repository when faithful operation requires it. Organized copies, reports, parser outputs, manifests, and review notes belong in this companion repository or in explicitly documented external evidence storage.
 
+## Run Analysis
+
+Preserved Logic Theorist run bundles can be analyzed from the companion repository with:
+
+```sh
+python3 scripts/analyze_run.py runs/YYYYMMDD_HHMMSS
+```
+
+The analysis script reads an existing run bundle and writes derived companion records:
+
+```text
+reports/YYYYMMDD_HHMMSS_run_report.md
+reports/YYYYMMDD_HHMMSS_theorem_summary.csv
+reports/YYYYMMDD_HHMMSS_analysis_summary.json
+manifests/YYYYMMDD_HHMMSS_analysis_manifest.sha256
+```
+
+These reports and structured summaries are derived analysis records. They do not replace the raw run directory, stdout, stderr, generated artifacts, or run manifest.
+
 ## Current Repository Status
 
 The public IPL-V fork is:

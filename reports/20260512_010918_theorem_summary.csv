@@ -1,0 +1,24 @@
+run_id,source_log,theorem,expression,attempt_line,status,status_line,effort_limit,effort_actual,subproblems_limit,subproblems_actual,substitutions_limit,substitutions_actual,qed_line,remember_line,remembered_theorem,remembered_expression,associated_dot_artifacts,notable
+20260512_010918,generated_artifacts/ltresults/202605120109.log,2.01,(PI-P)I-P,46,PROOF FOUND,50,200000,5579,50,1,50,2,56,64,2.01,(AI-A)I-A,generated_artifacts/tmp/lt-proof-201.dot,False
+20260512_010918,generated_artifacts/ltresults/202605120109.log,2.02,QI(PIQ),68,PROOF FOUND,72,200000,4253,50,1,50,2,78,86,2.02,AI(BIA),generated_artifacts/tmp/lt-proof-202.dot,False
+20260512_010918,generated_artifacts/ltresults/202605120109.log,2.04,(PI(QIR))I(QI(PIR)),90,PROOF FOUND,96,200000,22175,50,3,50,4,102,110,2.04,(AI(BIC))I(BI(AIC)),generated_artifacts/tmp/lt-proof-204.dot,False
+20260512_010918,generated_artifacts/ltresults/202605120109.log,2.05,(QIR)I((PIQ)I(PIR)),114,PROOF FOUND,118,200000,9280,50,1,50,2,124,132,2.05,(AIB)I((CIA)I(CIB)),generated_artifacts/tmp/lt-proof-205.dot,False
+20260512_010918,generated_artifacts/ltresults/202605120109.log,2.06,(PIQ)I((QIR)I(PIR)),136,PROOF FOUND,144,200000,31762,50,5,50,6,150,158,2.06,(AIB)I((BIC)I(AIC)),generated_artifacts/tmp/lt-proof-206.dot,False
+20260512_010918,generated_artifacts/ltresults/202605120109.log,2.07,PI(PVP),162,PROOF FOUND,165,200000,1765,50,0,50,1,169,177,2.07,AI(AVA),generated_artifacts/tmp/lt-proof-207.dot,False
+20260512_010918,generated_artifacts/ltresults/202605120109.log,2.08,PIP,181,PROOF FOUND,186,200000,5853,50,2,50,3,192,200,2.08,AIA,generated_artifacts/tmp/lt-proof-208.dot,False
+20260512_010918,generated_artifacts/ltresults/202605120109.log,2.10,-PVP,204,PROOF FOUND,208,200000,3680,50,1,50,2,214,222,2.10,-AVA,generated_artifacts/tmp/lt-proof-210.dot,False
+20260512_010918,generated_artifacts/ltresults/202605120109.log,2.11,PV-P,226,PROOF FOUND,230,200000,4377,50,1,50,2,236,244,2.11,AV-A,generated_artifacts/tmp/lt-proof-211.dot,False
+20260512_010918,generated_artifacts/ltresults/202605120109.log,2.12,PI--P,248,PROOF FOUND,252,200000,5594,50,1,50,2,258,266,2.12,AI--A,generated_artifacts/tmp/lt-proof-212.dot,False
+20260512_010918,generated_artifacts/ltresults/202605120109.log,2.13,PV---P,270,PROOF FOUND,275,200000,11592,50,2,50,3,281,289,2.13,AV---A,generated_artifacts/tmp/lt-proof-213.dot,False
+20260512_010918,generated_artifacts/ltresults/202605120109.log,2.14,--PIP,293,NO PROOF FOUND,319,200000,233510,50,19,50,20,,,,,generated_artifacts/tmp/lt-proof-214.dot,False
+20260512_010918,generated_artifacts/ltresults/202605120109.log,2.15,(-PIQ)I(-QIP),326,NO PROOF FOUND,359,200000,214612,50,25,50,26,,,,,generated_artifacts/tmp/lt-proof-215.dot,False
+20260512_010918,generated_artifacts/ltresults/202605120109.log,2.20,PI(PVQ),366,PROOF FOUND,375,200000,23515,50,6,50,7,381,389,2.20,AI(AVB),generated_artifacts/tmp/lt-proof-220.dot,False
+20260512_010918,generated_artifacts/ltresults/202605120109.log,2.21,-PI(PIQ),393,PROOF FOUND,397,200000,5482,50,1,50,2,403,411,2.21,-AI(AIB),generated_artifacts/tmp/lt-proof-221.dot,True
+20260512_010918,generated_artifacts/ltresults/202605120109.log,2.24,PI(-PVQ),415,NO PROOF FOUND,446,200000,207183,50,18,50,19,,,,,generated_artifacts/tmp/lt-proof-224.dot,True
+20260512_010918,generated_artifacts/ltresults/202605120109.log,3.13,(-(P*Q))I(-PV-Q),453,NO PROOF FOUND,508,200000,239018,50,48,50,49,,,,,generated_artifacts/tmp/lt-proof-313.dot,False
+20260512_010918,generated_artifacts/ltresults/202605120109.log,3.14,(-PV-Q)I(-(P*Q)),515,NO PROOF FOUND,567,200000,200411,50,13,50,14,,,,,generated_artifacts/tmp/lt-proof-314.dot,False
+20260512_010918,generated_artifacts/ltresults/202605120109.log,3.24,-(P*-P),574,NO PROOF FOUND,603,200000,213818,50,24,50,25,,,,,generated_artifacts/tmp/lt-proof-324.dot,False
+20260512_010918,generated_artifacts/ltresults/202605120109.log,4.13,P=--P,610,PROOF FOUND,615,200000,8122,50,2,50,3,621,629,4.13,A=--A,generated_artifacts/tmp/lt-proof-413.dot,True
+20260512_010918,generated_artifacts/ltresults/202605120109.log,4.20,P=P,633,PROOF FOUND,639,200000,7834,50,3,50,4,645,653,4.20,A=A,generated_artifacts/tmp/lt-proof-420.dot,False
+20260512_010918,generated_artifacts/ltresults/202605120109.log,4.24,P=(P*P),657,PROOF FOUND,673,200000,43016,50,11,50,12,683,691,4.24,A=(A*A),generated_artifacts/tmp/lt-proof-424.dot,True
+20260512_010918,generated_artifacts/ltresults/202605120109.log,4.25,P=(PVP),695,PROOF FOUND,701,200000,12277,50,3,50,4,707,715,4.25,A=(AVA),generated_artifacts/tmp/lt-proof-425.dot,True

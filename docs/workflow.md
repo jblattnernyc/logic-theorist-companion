@@ -60,6 +60,27 @@ The companion script `scripts/run_logic_theorist_capture.sh` implements this cap
 
 After the companion run bundle has been committed, pushed, and manifest-verified, return the IPL-V specimen to a clean working tree by removing only the exact native generated files from that run. This keeps the executable specimen clean between runs while preserving the permanent evidence record in the companion repository.
 
+## Run Analysis
+
+After a run bundle is preserved, analyze the preserved companion copy rather than rerunning Logic Theorist immediately.
+
+The companion script `scripts/analyze_run.py` analyzes a single run directory:
+
+```sh
+python3 scripts/analyze_run.py runs/YYYYMMDD_HHMMSS
+```
+
+It writes derived analysis outputs under `reports/` and `manifests/`:
+
+```text
+reports/YYYYMMDD_HHMMSS_run_report.md
+reports/YYYYMMDD_HHMMSS_theorem_summary.csv
+reports/YYYYMMDD_HHMMSS_analysis_summary.json
+manifests/YYYYMMDD_HHMMSS_analysis_manifest.sha256
+```
+
+The report and structured summaries are derivative companion records. They do not replace the raw run bundle, stdout, stderr, generated artifacts, or run manifest.
+
 ## Upstream Contact Policy
 
 This project does not publish pull requests, GitHub issues, comments, maintainer-review requests, or other communications to the original IPL-V repository or its maintainers as part of the normal workflow.

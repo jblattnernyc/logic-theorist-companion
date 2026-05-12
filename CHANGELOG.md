@@ -12,6 +12,12 @@ This changelog records changes to the companion research apparatus. It does not 
 - Added README attribution noting that the companion repository is maintained by John Blattner as part of AI Universe Labs research work.
 - Added the first captured Logic Theorist run bundle under `runs/20260512_010918/`, including a recovery note documenting completion of summary and manifest files after a capture-script summary-generation failure.
 - Added a standing policy to return the IPL-V specimen to a clean working tree after companion evidence is committed, pushed, and manifest-verified, using only exact native generated file cleanup.
+- Added `scripts/analyze_run.py` to parse preserved run bundles and generate formal Markdown, CSV, JSON, and SHA-256 analysis outputs.
+- Added first derived analysis outputs for `runs/20260512_010918/`:
+  - `reports/20260512_010918_run_report.md`
+  - `reports/20260512_010918_theorem_summary.csv`
+  - `reports/20260512_010918_analysis_summary.json`
+  - `manifests/20260512_010918_analysis_manifest.sha256`
 
 ### Fixed
 
@@ -89,12 +95,12 @@ This changelog records changes to the companion research apparatus. It does not 
 
 ### Pending
 
-- Review, commit, and push the run-capture script update.
-- Decide when to perform the first organized Logic Theorist run under the documented evidence policy.
+- Review parser limitations and decide whether to improve theorem-detail extraction.
+- Decide whether to perform a second confirmation run after reviewing the first run report.
 
 ### Not Performed
 
-- No Logic Theorist run was performed.
-- No IPL-V source files were created, modified, copied into the companion repository, or deleted.
+- No additional Logic Theorist run was performed while creating the analysis script.
+- No IPL-V source files were created, modified, copied into the companion repository, or deleted during this analysis-script update.
 - No GitHub issue, pull request, release, or tag was created.
 - No communication was sent to the original IPL-V repository or its maintainers.

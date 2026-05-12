@@ -54,6 +54,21 @@ runs/YYYYMMDD_HHMMSS/
 
 The companion script `scripts/run_logic_theorist_capture.sh` implements this default run-bundle structure.
 
+## Derived Analysis Records
+
+Parser outputs and formal reports are derived evidence records. They should be generated from preserved run bundles and stored in the companion repository, normally under `reports/` and `manifests/`.
+
+The first-version run analyzer writes:
+
+```text
+reports/YYYYMMDD_HHMMSS_run_report.md
+reports/YYYYMMDD_HHMMSS_theorem_summary.csv
+reports/YYYYMMDD_HHMMSS_analysis_summary.json
+manifests/YYYYMMDD_HHMMSS_analysis_manifest.sha256
+```
+
+Derived analysis records should identify the run directory they analyze and should preserve cautious language distinguishing local executable behavior from historical interpretation.
+
 ## Manifests
 
 Use SHA-256 manifests for evidence bundles:

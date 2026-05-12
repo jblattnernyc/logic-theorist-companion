@@ -33,3 +33,30 @@ The script preserves:
 - `summary.md`
 
 The script copies generated artifacts into the companion run directory. It does not delete, move, clean, or modify IPL-V source files.
+
+## Run Analysis
+
+`analyze_run.py` analyzes one preserved run bundle and writes companion analysis artifacts.
+
+Example:
+
+```sh
+python3 scripts/analyze_run.py runs/20260512_010918
+```
+
+The script reads the existing run directory and writes:
+
+- `reports/YYYYMMDD_HHMMSS_run_report.md`
+- `reports/YYYYMMDD_HHMMSS_theorem_summary.csv`
+- `reports/YYYYMMDD_HHMMSS_analysis_summary.json`
+- `manifests/YYYYMMDD_HHMMSS_analysis_manifest.sha256`
+
+By default, the script refuses to overwrite existing analysis outputs. Use `--force` only when intentionally regenerating those derived analysis files:
+
+```sh
+python3 scripts/analyze_run.py runs/20260512_010918 --force
+```
+
+The parser treats preserved `generated_artifacts/ltresults/*.log` files as the primary source for theorem-attempt parsing. It records theorem attempts, proof and no-proof outcomes, effort counts, subproblem counts, substitution counts, notable theorem statuses, warning lines, compiler-warning summaries, and associated `.dot` artifacts.
+
+The script does not run Logic Theorist, modify the IPL-V executable specimen, contact GitHub, open issues, create pull requests, or delete evidence.
