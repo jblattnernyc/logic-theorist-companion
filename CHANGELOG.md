@@ -32,6 +32,12 @@ This changelog records changes to the companion research apparatus. It does not 
   - `reports/comparisons/20260512_010918__20260512_141829/comparison_summary.json`
   - `reports/comparisons/20260512_010918__20260512_141829/comparison_manifest.sha256`
 - Added `docs/user_guide.md` as a professional operator-facing guide to repository roles, run capture, analysis, comparison, manifest verification, cleanup, and safety rules.
+- Added the third captured Logic Theorist run bundle under `runs/20260512_225541/`.
+- Added derived analysis outputs for `runs/20260512_225541/`:
+  - `reports/20260512_225541/run_report.md`
+  - `reports/20260512_225541/theorem_summary.csv`
+  - `reports/20260512_225541/analysis_summary.json`
+  - `reports/20260512_225541/analysis_manifest.sha256`
 
 ### Fixed
 
@@ -111,7 +117,7 @@ This changelog records changes to the companion research apparatus. It does not 
 ### Pending
 
 - Review parser limitations and decide whether to improve theorem-detail extraction.
-- Decide whether to perform a second confirmation run after reviewing the first run report.
+- Decide whether to commit and push the third run evidence and derived analysis after review.
 
 ### Not Performed
 

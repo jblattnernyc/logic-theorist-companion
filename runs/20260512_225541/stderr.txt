@@ -1,0 +1,73 @@
+
+; file: /Users/john-blattner/Documents/PROGRAMMING/IPL/LOGIC THEORIST/IPL-V/lt.lisp
+; in: DEFMETHOD IPL-DESCEND :BEFORE (T)
+;     (PUSH :DESCEND *CARD-CYCLES.IDS-EXECUTED*)
+; 
+; caught WARNING:
+;   undefined variable: COMMON-LISP-USER::*CARD-CYCLES.IDS-EXECUTED*
+
+; in: DEFMETHOD IPL-EVAL :BEFORE (T)
+;     (PUSH :DESCEND *CARD-CYCLES.IDS-EXECUTED*)
+; 
+; caught WARNING:
+;   undefined variable: COMMON-LISP-USER::*CARD-CYCLES.IDS-EXECUTED*
+
+; in: DEFUN PROOF-GRAPH!
+;     (REVERSE *CARD-CYCLES.IDS-EXECUTED*)
+; 
+; caught WARNING:
+;   undefined variable: COMMON-LISP-USER::*CARD-CYCLES.IDS-EXECUTED*
+
+; 
+; caught WARNING:
+;   2 more uses of undefined variable *CARD-CYCLES.IDS-EXECUTED*
+
+
+; file: /Users/john-blattner/Documents/PROGRAMMING/IPL/LOGIC THEORIST/IPL-V/lt.lisp
+; in: PROGN (SET-TRACE-MODE :NONE)
+;     (SETF *J15-MODE* :CLEAR-DL)
+; ==>
+;   (SETQ *J15-MODE* :CLEAR-DL)
+; 
+; caught WARNING:
+;   undefined variable: COMMON-LISP-USER::*J15-MODE*
+
+;     (SETF *TRACE-EXPRS*
+;             '(("M001R000" (PROGN # # # # '#)) ("M001R220" (EMIT-PROOF-GRAPH!))
+;               ("M001R260" (EMIT-PROOF-GRAPH!)) ("M019R000" (SETF #))
+;               ("M019R010" (WHEN *M19-R000-CYCLE* # #))))
+; ==>
+;   (SETQ *TRACE-EXPRS*
+;           '(("M001R000" (PROGN # # # # '#)) ("M001R220" (EMIT-PROOF-GRAPH!))
+;             ("M001R260" (EMIT-PROOF-GRAPH!)) ("M019R000" (SETF #))
+;             ("M019R010" (WHEN *M19-R000-CYCLE* # #))))
+; 
+; caught WARNING:
+;   undefined variable: COMMON-LISP-USER::*TRACE-EXPRS*
+
+;     (LOAD-IPL "LTFixed.liplv" :ADV-LIMIT 5000000)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::LOAD-IPL
+
+;     (SET-TRACE-MODE :NONE)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::SET-TRACE-MODE
+; 
+; compilation unit finished
+;   Undefined functions:
+;     LOAD-IPL SET-TRACE-MODE
+;   Undefined variables:
+;     *CARD-CYCLES.IDS-EXECUTED* *J15-MODE* *TRACE-EXPRS*
+;   caught 6 WARNING conditions
+;   caught 2 STYLE-WARNING conditions
+
+; file: /Users/john-blattner/Documents/PROGRAMMING/IPL/LOGIC THEORIST/IPL-V/iplv.lisp
+; in: DEFMETHOD IPL-EVAL (T)
+;     (SETF LINK S)
+; 
+; note: deleting unreachable code
+; 
+; compilation unit finished
+;   printed 1 note
