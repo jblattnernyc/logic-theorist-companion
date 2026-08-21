@@ -6,6 +6,15 @@ This changelog records changes to the companion research apparatus. It does not 
 
 ## Unreleased
 
+### Changed
+
+- On 2026-08-21, completed the migration from the former public-fork architecture to an upstream-at-fixed-commit model. The public research project remains `jblattnernyc/logic-theorist-companion`; `jeffshrager/IPL-V` is the external provenance source; and the local `IPL-V/` executable specimen remains pinned at `e35a705d57e99fe91d76d76b224b8af30f2fd632` with fetch-only upstream access.
+- Added `baseline/20260821_fork_retirement_preflight.md` and updated current-state documentation without altering earlier baseline, run, report, review-note, or changelog records that describe the historical fork configuration.
+
+### Removed
+
+- Retired and deleted the public GitHub fork `jblattnernyc/IPL-V` after publishing and verifying the companion migration documentation. The deletion did not alter the original upstream repository, local executable specimen, companion repository, preserved run evidence, or historical specimen commit.
+
 ### Added
 
 - Added `scripts/run_logic_theorist_capture.sh` to create timestamped Logic Theorist run bundles with metadata, stdout, stderr, exit status, copied generated artifacts, artifact listings, SHA-256 manifests, post-run metadata, and summaries.
