@@ -18,14 +18,24 @@ The intended local executable specimen path is:
 ~/Documents/PROGRAMMING/IPL/LOGIC THEORIST/IPL-V
 ```
 
+The specimen is pinned at:
+
+```text
+e35a705d57e99fe91d76d76b224b8af30f2fd632
+```
+
+Existing preserved Logic Theorist runs were generated from this commit. Reproducers must check out this exact commit rather than current upstream `master`.
+
 The preferred Git remote configuration is:
 
 ```text
-origin    project fork of IPL-V
-upstream  https://github.com/jeffshrager/IPL-V.git
+origin  https://github.com/jeffshrager/IPL-V.git (fetch)
+origin  DISABLED (push)
 ```
 
-The local specimen should preserve direct provenance from the upstream repository. Fetch access to `upstream` supports provenance review and comparison. The local `upstream` push URL may be set to `DISABLED` to prevent accidental pushes to the original repository.
+The local specimen preserves direct provenance from the original upstream repository. Fetch-only `origin` access supports provenance review and comparison while preventing accidental pushes to the original repository.
+
+The former public fork `https://github.com/jblattnernyc/IPL-V` was part of the historical project configuration and is being retired. Earlier baseline, run, report, review-note, and changelog records remain unchanged and continue to describe the configuration that existed when they were created.
 
 Source modifications, if any are later authorized for local reproducibility, should be minimal, explicit, and separately documented.
 
@@ -38,6 +48,8 @@ The intended local companion path is:
 ```
 
 This repository documents reproducibility workflow, evidence policy, baseline metadata, parser and audit scripts, reports, manifests, internal review notes, and publication-support materials.
+
+It is the public research project at `https://github.com/jblattnernyc/logic-theorist-companion`.
 
 ## Interpretive Caution
 

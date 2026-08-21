@@ -2,21 +2,25 @@
 
 ## Current Objective
 
-Create a professional, provenance-preserving two-repository workflow for the Logic Theorist / IPL-V software archaeology, reproducibility, and evidence project.
+Maintain a professional, provenance-preserving two-repository local workflow for the Logic Theorist / IPL-V software archaeology, reproducibility, and evidence project.
 
 The project should distinguish clearly between the executable IPL-V specimen and the companion scholarly apparatus used to document, verify, interpret, and publish results.
 
 ## Recommended Repository Model
 
-Use two separate GitHub-oriented repositories under a local umbrella directory:
+Use two separate local Git repositories under an umbrella directory:
 
 ```text
 ~/Documents/PROGRAMMING/IPL/LOGIC THEORIST/
-  IPL-V/                         fork of jeffshrager/IPL-V; executable specimen
-  logic-theorist-companion/       companion repository; research apparatus
+  IPL-V/                         pinned specimen of jeffshrager/IPL-V
+  logic-theorist-companion/       public research project and apparatus
 ```
 
 Do not make the parent `LOGIC THEORIST/` directory itself a Git repository if it contains both child repositories.
+
+The public project is `jblattnernyc/logic-theorist-companion`. The external provenance source is `jeffshrager/IPL-V`. The local executable specimen is pinned at commit `e35a705d57e99fe91d76d76b224b8af30f2fd632`; existing preserved runs were generated from this commit. Reproducers must use the exact documented commit rather than current upstream `master`.
+
+The former public fork `jblattnernyc/IPL-V` was part of the historical project configuration and is being retired. Historical evidence continues to document that earlier configuration unchanged.
 
 ## Repository Purposes
 
@@ -29,11 +33,11 @@ Purpose:
 - Support faithful local execution of the reconstructed program.
 - Keep any source modifications minimal, explicit, and historically interpretable.
 
-Expected remotes:
+Required local remote configuration:
 
 ```text
-origin    project fork of IPL-V
-upstream  https://github.com/jeffshrager/IPL-V.git
+origin  https://github.com/jeffshrager/IPL-V.git (fetch)
+origin  DISABLED (push)
 ```
 
 ### logic-theorist-companion
@@ -64,7 +68,7 @@ Create or confirm:
 ~/Documents/PROGRAMMING/IPL/LOGIC THEORIST/logic-theorist-companion
 ```
 
-The `IPL-V` directory should be cloned from the project fork of the original upstream repository, with `upstream` configured to `jeffshrager/IPL-V`.
+The `IPL-V` directory should be a local checkout of the original upstream repository at commit `e35a705d57e99fe91d76d76b224b8af30f2fd632`, with fetch-only `origin` access to `jeffshrager/IPL-V`.
 
 The `logic-theorist-companion` directory should be initialized as a separate original repository.
 
@@ -118,7 +122,8 @@ The initial documentation should explain:
 
 - The distinction between the executable specimen and companion repository.
 - The original upstream IPL-V provenance.
-- The role of the project fork.
+- The exact pinned specimen commit and fetch-only upstream remote model.
+- The historical role and retirement of the former public fork.
 - The policy for generated Logic Theorist outputs.
 
 ### Phase 4: Define Evidence and Run Policy
@@ -180,8 +185,6 @@ The initial setup should not:
 
 ## Open Decisions
 
-- Exact GitHub repository name for the companion repository.
-- Whether the companion repository should be public from the beginning or private until reviewed.
 - Whether selected raw logs and dotstar files should be versioned in Git, attached to releases, or kept in external evidence storage.
 - Whether large PDFs and evidence bundles should use Git LFS, GitHub Releases, Zenodo, OSF, or local storage.
 - Whether any IPL-V source changes are needed for local reproducibility, and how to document them without contacting upstream.

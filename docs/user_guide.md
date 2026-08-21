@@ -12,9 +12,9 @@ The project uses two separate repositories:
   logic-theorist-companion/
 ```
 
-`IPL-V/` is the executable specimen. It is a fork of the upstream IPL-V repository and should remain focused on source provenance and faithful execution.
+`IPL-V/` is the executable specimen. It is a local checkout of the original upstream IPL-V repository, pinned at commit `e35a705d57e99fe91d76d76b224b8af30f2fd632`, and should remain focused on source provenance and faithful execution.
 
-`logic-theorist-companion/` is the research apparatus. It stores workflow documentation, baseline metadata, run bundles, generated analysis, comparisons, manifests, and review materials.
+`logic-theorist-companion/` is the public research project and research apparatus. It stores workflow documentation, baseline metadata, run bundles, generated analysis, comparisons, manifests, and review materials.
 
 Do not collapse these repositories into a monorepo. Do not copy the full IPL-V source tree into the companion repository. Do not create pull requests, issues, comments, or other communications to the original IPL-V repository or maintainers as part of the normal workflow.
 
@@ -31,11 +31,13 @@ The local IPL-V specimen is expected at:
 Its normal remote model is:
 
 ```text
-origin    https://github.com/jblattnernyc/IPL-V.git
-upstream  https://github.com/jeffshrager/IPL-V.git
+origin  https://github.com/jeffshrager/IPL-V.git (fetch)
+origin  DISABLED (push)
 ```
 
-The `upstream` fetch URL preserves provenance. The `upstream` push URL may be set to `DISABLED` to reduce the risk of accidental upstream communication.
+The `origin` fetch URL preserves provenance, and the disabled push URL reduces the risk of accidental upstream communication. Reproducers must check out the exact documented commit rather than current upstream `master`. Existing preserved Logic Theorist runs were generated from commit `e35a705d`.
+
+The former public fork `https://github.com/jblattnernyc/IPL-V` records a historical project configuration and is being retired. Historical baseline, run, report, review-note, and changelog records continue to describe that earlier configuration unchanged.
 
 Do not modify tracked IPL-V source files unless the task explicitly requires it.
 
@@ -59,6 +61,8 @@ manifests/      project-level or cross-run manifests when needed
 evidence/       supplemental evidence bundles when needed
 review-notes/   internal review notes
 ```
+
+Its public repository is `https://github.com/jblattnernyc/logic-theorist-companion`.
 
 ## Core Concepts
 
@@ -136,7 +140,14 @@ cd "$HOME/Documents/PROGRAMMING/IPL/LOGIC THEORIST/logic-theorist-companion"
 git status --short --branch
 ```
 
-The desired state is no uncommitted changes in either repository.
+Also confirm the specimen commit:
+
+```sh
+cd "$HOME/Documents/PROGRAMMING/IPL/LOGIC THEORIST/IPL-V"
+git rev-parse HEAD
+```
+
+The required output is `e35a705d57e99fe91d76d76b224b8af30f2fd632`. The desired status is no unreviewed changes in either repository. Document known untracked files and do not clean, delete, overwrite, or stage them without explicit authorization.
 
 Also confirm that SBCL is available:
 

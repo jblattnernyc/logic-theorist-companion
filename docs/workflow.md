@@ -6,11 +6,22 @@ Use two separate repositories under the umbrella workspace:
 
 ```text
 ~/Documents/PROGRAMMING/IPL/LOGIC THEORIST/
-  IPL-V/
-  logic-theorist-companion/
+  IPL-V/                         pinned executable specimen
+  logic-theorist-companion/       public research project and apparatus
 ```
 
 Do not make the umbrella directory itself a Git repository. Do not use a Git submodule unless the project explicitly changes that decision.
+
+The original upstream provenance source is `https://github.com/jeffshrager/IPL-V`. The local specimen is pinned at commit `e35a705d57e99fe91d76d76b224b8af30f2fd632`, and existing preserved runs were generated from this commit. Reproducers must use the exact documented commit rather than current upstream `master`.
+
+The local specimen uses this fetch-only remote configuration:
+
+```text
+origin  https://github.com/jeffshrager/IPL-V.git (fetch)
+origin  DISABLED (push)
+```
+
+The public research project is `https://github.com/jblattnernyc/logic-theorist-companion`. The former public fork `https://github.com/jblattnernyc/IPL-V` was part of the historical project configuration and is being retired; historical evidence describing it remains unchanged.
 
 ## Baseline Capture
 
@@ -110,7 +121,7 @@ This project does not publish pull requests, GitHub issues, comments, maintainer
 
 Internal notes may be kept in `review-notes/`, but they are not publication requests or planned upstream communications.
 
-The local IPL-V specimen may keep `upstream` configured for fetch access to `https://github.com/jeffshrager/IPL-V.git`, while setting the `upstream` push URL to `DISABLED` to prevent accidental local pushes to the original repository.
+The local IPL-V specimen uses `origin` for fetch access to `https://github.com/jeffshrager/IPL-V.git`, with the `origin` push URL set to `DISABLED` to prevent accidental local pushes to the original repository.
 
 ## Publication Preparation
 

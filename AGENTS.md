@@ -14,7 +14,7 @@ The recommended local project layout is:
 
 ```text
 ~/Documents/PROGRAMMING/IPL/LOGIC THEORIST/
-  IPL-V/                         executable specimen; fork of upstream IPL-V
+  IPL-V/                         pinned executable specimen of upstream IPL-V
   logic-theorist-companion/       companion repository for research apparatus
 ```
 
@@ -23,6 +23,12 @@ The IPL-V specimen should preserve direct provenance from:
 ```text
 https://github.com/jeffshrager/IPL-V
 ```
+
+The local `IPL-V/` specimen must remain pinned at commit `e35a705d57e99fe91d76d76b224b8af30f2fd632` unless an explicit later research decision authorizes another specimen. Its `origin` fetch URL should be `https://github.com/jeffshrager/IPL-V.git`, with its `origin` push URL set to `DISABLED`. Reproducers must use the exact documented commit rather than current upstream `master`.
+
+The public research project is `https://github.com/jblattnernyc/logic-theorist-companion`. Existing preserved Logic Theorist runs were generated from commit `e35a705d`.
+
+The former public fork `jblattnernyc/IPL-V` was part of the historical project configuration and is being retired. Do not alter historical baseline, run, report, review-note, or changelog records that accurately describe that earlier configuration.
 
 The companion repository is for:
 
@@ -223,19 +229,17 @@ Do not conflate:
 
 ## Git and GitHub Policy
 
-The recommended GitHub model is two repositories:
+The GitHub model is:
 
 ```text
-<project-owner>/IPL-V
-  fork of jeffshrager/IPL-V
+Public research project:
+  jblattnernyc/logic-theorist-companion
 
-<project-owner>/logic-theorist-companion
-  companion repository
+External provenance source:
+  jeffshrager/IPL-V
 ```
 
-The IPL-V fork should preserve upstream provenance.
-
-The companion repository should preserve research apparatus and evidence.
+The local `IPL-V/` checkout is a pinned executable specimen with fetch-only access to the external provenance source; it is not a project-owned public repository. The companion repository preserves the research apparatus and evidence.
 
 Do not push to GitHub without explicit confirmation.
 

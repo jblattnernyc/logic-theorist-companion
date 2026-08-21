@@ -10,11 +10,13 @@ The intended local workspace is:
 
 ```text
 ~/Documents/PROGRAMMING/IPL/LOGIC THEORIST/
-  IPL-V/                         executable specimen; fork of upstream IPL-V
+  IPL-V/                         pinned executable specimen of upstream IPL-V
   logic-theorist-companion/       companion research apparatus
 ```
 
 The parent `LOGIC THEORIST/` directory is a workspace container and should not be treated as a monorepo.
+
+The public research project is `https://github.com/jblattnernyc/logic-theorist-companion`. The original upstream IPL-V repository remains an external provenance source rather than a project-owned public repository.
 
 ## IPL-V Provenance
 
@@ -24,7 +26,9 @@ The original upstream IPL-V source is:
 https://github.com/jeffshrager/IPL-V
 ```
 
-The local `IPL-V/` repository is expected to be cloned from a project fork of that upstream repository, with `upstream` configured to `https://github.com/jeffshrager/IPL-V.git`.
+The local `IPL-V/` directory is a pinned executable specimen of that upstream repository at commit `e35a705d57e99fe91d76d76b224b8af30f2fd632`. Its `origin` fetch URL is `https://github.com/jeffshrager/IPL-V.git`, and its `origin` push URL is `DISABLED`. Reproducers must use the exact documented commit rather than current upstream `master`.
+
+Existing preserved Logic Theorist runs in this companion repository were generated from commit `e35a705d`.
 
 ## Separation of Materials
 
@@ -85,19 +89,21 @@ See [docs/user_guide.md](docs/user_guide.md) for the full operator-facing guide 
 
 ## Current Repository Status
 
-The public IPL-V fork is:
-
-```text
-https://github.com/jblattnernyc/IPL-V
-```
-
-The public companion repository is:
+The public research project is:
 
 ```text
 https://github.com/jblattnernyc/logic-theorist-companion
 ```
 
-The local IPL-V specimen has been cloned from the project fork and configured with `upstream` pointing to the original `jeffshrager/IPL-V` repository.
+The original upstream provenance source is:
+
+```text
+https://github.com/jeffshrager/IPL-V
+```
+
+The local IPL-V specimen is pinned at `e35a705d57e99fe91d76d76b224b8af30f2fd632` and has fetch-only `origin` access to the original upstream repository.
+
+The former public fork `https://github.com/jblattnernyc/IPL-V` was part of the historical project configuration and is being retired. Historical baseline, run, report, review-note, and changelog records retain the configuration that existed when they were created.
 
 The local companion repository has `origin` configured, and the initial scaffold has been committed and pushed. Future GitHub issues, pull requests, releases, tags, commits, pushes, and Logic Theorist execution require explicit confirmation.
 
